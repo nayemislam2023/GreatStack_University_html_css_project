@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <Style>
+        
+/*
+--------------------------------
+About Us page
+--------------------------------------
+*/
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header h1{
+    margin-top: 110px;
+}
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button{
+    margin: 10px 0;
+}
+.red-btn{
+    border: 1px solid #f44366;
+    background: transparent;
+    color: #f44366;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+
+/*------------------------*/
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background-color: #f44336;
+    color:#fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@media(max-width:700px){
+    .sub-header{
+        height: 70vh;
+    }
+    .sub-header h1{
+        font-size: 24px;
+    }
+    nav img{
+        margin-top: 30px;
+    }
+    .about-col h1{
+        margin-top: -30px;
+        font-size: 30px;
+    }
+    .nav-links{
+        height: 70vh;
+    }
+}
+
+
+    </Style>
+
+
+
+</head>
+
+<body>
+    <section class="sub-header" id="about.html">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Certificate & Online Programs for 2023</h1>
+
+    </section>
+
+    <!--End of navber and banner section-->
+
+    <!--Blog page content-->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs for 2023</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem excepturi placeat inventore eum, ab, tempora illo atque consequatur eius, reprehenderit voluptates modi! Quasi, temporibus excepturi,
+                   doloribus quo aspernatur porro soluta architecto provident ducimus voluptatem repudiandae commodi, unde quae vitae blanditiis eos molestiae fugit aliquid impedit tempora nemo vel atque ipsum? Deserunt sit sapiente tempora error asperiores accusamus necessitatibus aperiam alias!</p>
+
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum, aut vitae consequatur eos esse, ut iusto sint vero qui tempora atque facere quidem totam sunt voluptate dolore architecto reprehenderit quo illo earum ab cum. Voluptate totam tempora similique repellat nihil eos possimus maiores exercitationem, id ex quo doloribus sunt ad! Veniam, officiis. Nobis perspiciatis, voluptates deserunt dicta aut aliquid porro tenetur repellat ipsam doloremque quae eum omnis doloribus accusamus, sint maiores dolores quod, natus praesentium minus fugiat debitis quas quos! Qui odio amet maxime? Quasi quis perspiciatis blanditiis necessitatibus, eligendi, ducimus commodi nemo ea nihil, vero recusandae? Culpa, libero!
+                </p>
+                <br>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit nemo recusandae dicta, incidunt dolorum voluptatibus dignissimos suscipit, illo placeat alias error. Praesentium vero et voluptatibus sunt quidem illum pariatur perspiciatis nostrum! Modi illo sapiente quas provident facilis similique, molestias fugiat maxime fuga nisi harum incidunt voluptatum nihil eveniet deserunt, error ducimus, a maiores in possimus totam tenetur rem consectetur. Illo quidem autem et perferendis recusandae ducimus porro odit tempora velit, suscipit reprehenderit ab minus temporibus blanditiis laboriosam ad cumque possimus hic totam harum sapiente aspernatur, asperiores dolorum. Aperiam, reprehenderit!
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex possimus ratione officiis saepe nihil minima, necessitatibus molestias deleniti? Numquam placeat repudiandae amet minus nemo voluptates dignissimos deleniti, aliquam consequatur modi illum illo perferendis officia assumenda aut odit exercitationem nostrum fugit. Laborum molestiae quas maiores illo.
+                </p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+
+              <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+              </div>
+
+              <div>
+                <span>Data Science</span>
+                <span>28</span>
+              </div>
+
+              <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+              </div>
+
+              <div>
+                <span>Computer Science</span>
+                <span>34</span>
+              </div>
+              <div>
+                <span>Auto CAD</span>
+                <span>42</span>
+              </div>
+              <div>
+                <span>Journalism</span>
+                <span>22</span>
+              </div>
+              <div>
+                <span>Commerce</span>
+                <span>30</span>
+              </div>
+
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!--Fotter section-->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae dolorum eum ducimus consequatur <br> adipisci accusantium exercitationem.
+         Quis dicta asperiores rerum.
+      </p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+</section>
+
+<!--Toggle menu-->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

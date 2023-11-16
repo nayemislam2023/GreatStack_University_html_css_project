@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <Style>
+        
+/*
+--------------------------------
+About Us page
+--------------------------------------
+*/
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header h1{
+    margin-top: 110px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44366;
+    background: transparent;
+    color: #f44366;
+}
+.red-btn:hover{
+    color: #fff;
+}
+@media(max-width:700px){
+    .sub-header{
+        height: 70vh;
+    }
+    nav img{
+        margin-top: 30px;
+    }
+    .about-col h1{
+        margin-top: -30px;
+        font-size: 30px;
+    }
+    .nav-links{
+        height: 70vh;
+    }
+}
+
+
+    </Style>
+
+
+
+</head>
+
+<body>
+    <section class="sub-header" id="about.html">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Courses </h1>
+
+    </section>
+
+    <!--End of navber and banner section-->
+
+    <!--Course page-->
+    <!--Course section start here-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ullam?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum esse,
+                 debitis placeat labore fugit asperiores iusto illum eius, eum facere est commodi vitae ab.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum esse,
+                 debitis placeat labore fugit asperiores iusto illum eius, eum facere est commodi vitae ab.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum esse,
+                 debitis placeat labore fugit asperiores iusto illum eius, eum facere est commodi vitae ab.</p>
+            </div>
+        </div>
+    </section>
+    
+<!--Course section end here-->
+
+<!--This is facilities Page-->
+<!--Facilities section start here-->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ullam?</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/library.png" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic dolores eveniet!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/basketball.png" alt="">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic dolores eveniet!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/cafeteria.png" alt="">
+            <h3>Testy and Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic dolores eveniet!</p>
+        </div>
+    </div>
+</section>
+<!--Facilities section end here-->
+    
+
+<!--Fotter section-->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae dolorum eum ducimus consequatur <br> adipisci accusantium exercitationem.
+         Quis dicta asperiores rerum.
+      </p>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+</section>
+
+<!--Toggle menu-->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
